@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica para formularios</title>
+    <hr/>
+</head>
+<body>
+    <h2>Danos tu opinión ;)</h2>
+    <h4>Por favor conteste la siguiente encuesta para saber tu opinion del producto</h4>
+    <hr/>
+    <br/>
+    <form method="post" action=mi_servidor.php>
+        <div>
+            <label for="codigo_postal">Ingrese su CP:</label>
+            <input type="text" placeholder="Codigo Postal" maxlength="5" name="codigo_postal" id="codigo_postal" >
+        </div>
+        <br/>
+        <div>
+            <label for="opinion">Del 1 al 5, siendo el 5 la mayor, ¿cual es tu nivel de satisfacción?</label>
+            <input type="radio" name="opinion" id="opinion">5
+            <input type="radio" name="opinion" id="opinion">4
+            <input type="radio" name="opinion" id="opinion">3
+            <input type="radio" name="opinion" id="opinion">2
+            <input type="radio" name="opinion" id="opinion">1
+        </div>
+        <br/>
+        <div>
+            <label for="email">Introduzca su email:</label>
+            <input type="email" placeholder="email" name="email" id="email">
+        </div>
+        <br/>
+        <div>
+            <label for="puntos_positivos">Escriba brevemente los puntos positivos del producto:</label>
+            <textarea nombre="puntos_positivos" id="puntos_positivos"></textarea>
+        </div>
+        <br/>
+        <div>
+            <label for="puntos_negativos">Escriba brevemente los puntos negativos del producto:</label>
+            <textarea nombre="puntos_negativos" id="puntos_negativos"></textarea>
+        </div>
+        <br/>
+        <div>
+            <label for="opinion_eficiencia">Como calificaria la eficiencia del producto</label>
+            <input type="radio" name="opinion_eficiencia" id="opinion_eficiencia">excelente
+            <input type="radio" name="opinion_eficiencia" id="opinion_eficiencia">bueno
+            <input type="radio" name="opinion_eficiencia" id="opinion_eficiencia">regular
+            <input type="radio" name="opinion_eficiencia" id="opinion_eficiencia">pesimo
+        </div>
+        <br/>
+        <div>
+            <label for="opinion_calidad">Como calificaria la relacion calidad-precio del producto</label>
+            <input type="radio" name="opinion_calidad" id="opinion_calidad">excelente
+            <input type="radio" name="opinion_calidad" id="opinion_calidad">bueno
+            <input type="radio" name="opinion_calidad" id="opinion_calidad">regular
+            <input type="radio" name="opinion_calidad" id="opinion_calidad">pesimo
+        </div>
+        <br/>
+        <div>
+            <label for="opinion_atencion">Como calificaria  el trato del personal al momento de adquirir el producto</label>
+            <input type="radio" name="opinion_atencion" id="opinion_atencion">excelente
+            <input type="radio" name="opinion_atencion" id="opinion_atencion">bueno
+            <input type="radio" name="opinion_atencion" id="opinion_atencion">regular
+            <input type="radio" name="opinion_atencion" id="opinion_atencion">pesimo
+        </div>
+        <br/>
+        <div>
+           <label for="opinion_comodidad">Como calificaria la comodidad del producto</label>
+           <select name="opinion_comodidad" id="opinion_comodidad">
+               <option value="-">-</option>
+               <option value="excelente">excelente</option>
+               <option value="bueno">bueno</option>
+               <option value="regular">regular</option>
+               <option value="pesimo">pesimo</option>
+           </select>
+        </div>
+        <br/>
+        <div>
+            <label for="opinion_estetica">Como calificaria la estetica del producto</label>
+            <select name="opinion_estetica" id="opinion_estetica">
+                <option value="-">-</option>
+                <option value="excelente">excelente</option>
+                <option value="bueno">bueno</option>
+                <option value="regular">regular</option>
+                <option value="pesimo">pesimo</option>
+            </select>
+         </div>
+         <br/>
+         <div>
+            <label for="opinion_tamaño">Como calificaria el tamaño del producto</label>
+            <select name="opinion_tamaño" id="opinion_tamaño">
+                <option value="-">-</option>
+                <option value="excelente">excelente</option>
+                <option value="bueno">bueno</option>
+                <option value="regular">regular</option>
+                <option value="pesimo">pesimo</option>
+            </select>
+         </div>
+         <br/>
+         <div>
+            <input type="submit" value="Enviar">
+         </div>
+         <br/>
+         <hr/>
+    </form>
+    
+</body>
+</html>
